@@ -7,7 +7,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>Benjamin Andersen - Full Stack and Java Developer</title>
+		<title>Benjamin Andersen - Full Stack and Java Developer Test</title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -315,16 +315,16 @@
 				<div class="row">
 
 					<div class="col-md-4 col-sm-6 portfolio-item">
-						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal0">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
 									<div class="portfolio-caption">
-										<h4>Ski Trip Planner</h4>
-										<p class="text-muted">A Ski Trip Planner Application</p>
+										<h4>Home Repair Insurance</h4>
+										<p class="text-muted">Node Based Home Repair Website</p>
 									</div>
 								</div>
 							</div>
-							<img class="img-fluid" src="img/portfolio/ski-web-app.png" alt="">
+							<img class="img-fluid" src="img/portfolio/handyman.png" alt="">
 						</a>
 					</div>
 
@@ -343,6 +343,20 @@
 					</div>
 
 					<div class="col-md-4 col-sm-6 portfolio-item">
+						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal0">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<div class="portfolio-caption">
+										<h4>Ski Trip Planner</h4>
+										<p class="text-muted">A Ski Trip Planner Application</p>
+									</div>
+								</div>
+							</div>
+							<img class="img-fluid" src="img/portfolio/ski-web-app-updated.png" alt="">
+						</a>
+					</div>
+
+					<div class="col-md-4 col-sm-6 portfolio-item">
 						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
@@ -352,25 +366,11 @@
 									</div>
 								</div>
 							</div>
-							<img class="img-fluid" src="img/portfolio/RickAndMorty.png" alt="">
+							<img class="img-fluid" src="img/portfolio/RickAndMorty-updated.png" alt="">
 						</a>
 					</div>
 
 					<!-- <div class="col-md-4 col-sm-6 portfolio-item">
-						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-							<div class="portfolio-hover">
-								<div class="portfolio-hover-content">
-									<div class="portfolio-caption">
-										<h4>React Memory Game</h4>
-										<p class="text-muted">React-powered image memory game</p>
-									</div>
-								</div>
-							</div>
-							<img class="img-fluid" src="img/portfolio/3.png" alt="">
-						</a>
-					</div>
-
-					<div class="col-md-4 col-sm-6 portfolio-item">
 						<a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
 							<div class="portfolio-hover">
 								<div class="portfolio-hover-content">
@@ -647,7 +647,7 @@
 			</div>
 		</div>
 
-		<!-- Modal MEMORY GAME -->
+		<!-- HANDYMAN WEBSITE -->
 		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -661,7 +661,16 @@
 					<div class="carousel-wrapper">
 						<div class="carousel">
 							<div>
-								<img src="img/portfolio/mhw1.png">
+								<img src="img/portfolio/handyman.png">
+							</div>
+							<div>
+								<img src="img/portfolio/handyman_signup.png">
+							</div>
+							<div>
+								<img src="img/portfolio/handyman_ticket.png">
+							</div>
+							<div>
+								<img src="img/portfolio/handyman_db.png">
 							</div>
 						</div>
 					</div>
@@ -670,23 +679,30 @@
 					<div class="container">
 						<div class="modal-body">
 							<!-- Project Details Go Here -->
-							<h2 class="text-uppercase">React Memory Game</h2>
-							<p class="item-intro text-muted">Don't click on the same image twice</p>
+							<h2 class="text-uppercase">Handyman Plan</h2>
+							<p class="item-intro text-muted">Home Repair Made Simple</p>
 							<div class="tech-button-div">
-								<button class="tech-button btn btn-primary" type="button">React</button>
+								<button class="tech-button btn btn-primary" type="button">Node</button>
+								<button class="tech-button btn btn-primary" type="button">Express</button>
+								<button class="tech-button btn btn-primary" type="button">Handlebars</button>
+								<button class="tech-button btn btn-primary" type="button">Sequelize</button>
+								<button class="tech-button btn btn-primary" type="button">MySQL</button>
 							</div>
-							<p>This is a memory game built entirely with React, using images from the Capcom game "Monster Hunter World".</p>
-							<p>The player gets one point for clicking on an image, but if they click on the same image twice they lose and the game resets. The order of the images reshuffles after each click.</p>
-							<p>In summary, what I built is:</p>
+							<p>Handyman Plan solves the problem of coordinating and completing unexpected home maintence on a budget.  Inspired by the neighborhood user group model of Nextdoor, Handymanplan first connects users with neighborhoods who may be able and willing to help with their home repairs, with the option always to schedule a contractor and schedule professional repairs.</p>
+							<p>Users sign up, linking them by their address to their neighborhood, and submit tickets for home repair projects, which is covered under their monthly insurance premium plan plus copay.  The end result is convenient home maintence with predicatable cost and net cost savings</p> 
+							<p>In summary, what we built is:</p>
 							<ul>
-								<li>React components for the clickable images and the game header</li>
-								<li>A main class component that holds an array of every image that shuffles on every click, an array of all the images that the player has clicked so far, and the player's current score and highest score</li>
+								<li>Express server for handling all requests</li>
+								<li>MySQL database</li>
+								<li>Sequelize ORM for building relationships among the db tables and crud operations</li>
+								<li>Passport.js authentication and password encryption</li>
+								<li>Bootstrap front end</li>
 							</ul>
 
-							<button  onclick="window.open('https://github.com/a-murph/Memory-Game', '_blank');" class="btn btn-primary" type="button">
+							<button  onclick="window.open('https://github.com/eanderson111/Project2', '_blank');" class="btn btn-primary" type="button">
 								<i class="fab fa-github"></i>
 								Github</button>
-							<button onclick="window.open('https://a-murph.github.io/Memory-Game', '_blank');" class="btn btn-primary" type="button">
+							<button onclick="window.open('http://peaceful-waters-90723.herokuapp.com/', '_blank');" class="btn btn-primary" type="button">
 								<i class="fas fa-external-link-alt"></i>
 								Live Website</button>
 						</div>
